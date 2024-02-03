@@ -40,6 +40,13 @@ def RPY2XYZ(angles):
     return R.transpose()
 
 def plane(coordinates):
+    """
+    Configuring the 6 plane of the cubics
+    Args
+        Coordinates
+    Return
+        6 plane of the cubics
+    """
     # Defining the plane
     plane1 = np.array([
         [coordinates[0][0], coordinates[0][4], coordinates[0][5], coordinates[0][3], coordinates[0][0]],
