@@ -1,7 +1,8 @@
-This repo holds the code to read angles reading from MPU-6050 IMU that's connected to a ESP32 Microcontroller. The idea in the program is that, I split the calculation, where I have put angle reading from the sensor in the microcontroller itself, and pass the data through Serial USB communication back to our Python program here in my Laptop. I have fun doing this, real-time data just makes me goes nuts, so viewing the results of reading in another program make me proud of myself. 
+This repo holds the code to read angles reading from MPU-6050 IMU that's connected to a ESP32 Microcontroller. The idea in the program is that, I split the calculation, where I have put angle reading from the sensor in the microcontroller itself, and pass the data through Serial USB communication back to our Python program here in my Laptop. I have fun doing this, real-time data just makes me goes nuts, so viewing the results of reading in another program make me proud of myself. But there is still something wrong with the data flow, but meh will fix it next time.
 
-
-This repo holds the code to read in quaternions from an ICM-20948 IMU that's connected to a Teensy 4.0 microcontroller. That is piped to my laptop running python on linux on windows via Windows Subsystem for Linux. If you have a pure windows/mac/linux machine then the steps below will be different but hopefully similar.
+<p align="center">
+  <img width="29%"src="3drotateanim.png">
+</p>
 
 ## Installation Instructions
 First get the libraries that we will be using to read the angles from MPU-6050. I'm using MPU_LIGHT by rfetick. (https://github.com/rfetick/MPU6050_light)
