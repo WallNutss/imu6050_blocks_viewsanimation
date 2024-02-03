@@ -1,8 +1,5 @@
 import matplotlib.pyplot as plt
-import numpy as np
-import math
-import pandas as pd
-from matplotlib.ticker import (MultipleLocator, AutoMinorLocator)
+from matplotlib.ticker import (MultipleLocator)
 
 
 def insideAnimation(line1, line2, line3, line4, line5, line6, plane1, plane2, plane3, plane4, plane5, plane6):
@@ -23,7 +20,6 @@ def insideAnimation(line1, line2, line3, line4, line5, line6, plane1, plane2, pl
 
     line6.set_data(plane6[0],plane6[1])
     line6.set_3d_properties(plane6[2])
-
 
 def outsideAnimation(data, ax):
     line1, = ax.plot(data[0][0], data[0][1], data[0][2], linestyle='dashed')
